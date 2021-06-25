@@ -17,7 +17,7 @@ function tambah($koneksi){
         $phone = $_POST['phone'];
         
         if(!empty($name) && !empty($email) && !empty($phone)){
-            $sql = "INSERT INTO user (name, email, phone) VALUES(".$name."','".$email."','".$phone."')";
+            $sql = "INSERT INTO user (name, email, phone) VALUES('".$name."','".$email."','".$phone."')";
             $simpan = mysqli_query($koneksi, $sql);
             if($simpan && isset($_GET['aksi'])){
                 if($_GET['aksi'] == 'create'){
@@ -92,7 +92,7 @@ function ubah($koneksi){
         $phone = $_POST['phone'];
         
         if(!empty($name) && !empty($email) && !empty($phone)){
-            $perubahan = "name='".$name."',email=".$email.",phone=".$phone."'";
+            $perubahan = "name='".$name."',email='".$email."',phone=".$phone;
             $sql_update = "UPDATE user SET ".$perubahan." WHERE id=$id";
             $update = mysqli_query($koneksi, $sql_update);
             if($update && isset($_GET['aksi'])){
