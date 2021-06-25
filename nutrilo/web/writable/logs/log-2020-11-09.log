@@ -1,0 +1,19 @@
+CRITICAL - 2020-11-09 04:15:55 --> Call to undefined method App\Models\Admin\Catering_buyer_model::getButer
+#0 C:\xampp\htdocs\internal-nutrilo\app\Controllers\Admin\Catering_buyer.php(81): CodeIgniter\Model->__call('getButer', Array)
+#1 C:\xampp\htdocs\internal-nutrilo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Catering_buyer->add()
+#2 C:\xampp\htdocs\internal-nutrilo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Catering_buyer))
+#3 C:\xampp\htdocs\internal-nutrilo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\internal-nutrilo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\internal-nutrilo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-09 04:33:46 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\internal-nutrilo\app\Views\Admin\Catering_buyer_add_view.php(236): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 236, Array)
+#1 C:\xampp\htdocs\internal-nutrilo\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\internal-nutrilo\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('Admin/Catering_...', Array, true)
+#3 C:\xampp\htdocs\internal-nutrilo\app\Controllers\Admin\Catering_buyer.php(139): view('Admin/Catering_...', Array)
+#4 C:\xampp\htdocs\internal-nutrilo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Catering_buyer->edit()
+#5 C:\xampp\htdocs\internal-nutrilo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Catering_buyer))
+#6 C:\xampp\htdocs\internal-nutrilo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\internal-nutrilo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\internal-nutrilo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}

@@ -1,0 +1,12 @@
+CRITICAL - 2020-07-19 21:29:37 --> filemtime(): stat failed for user-assets/js/vendor/modernizr-2.8.3.min.js
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filemtime(): st...', 'C:\\xampp\\htdocs...', 33, Array)
+#1 C:\xampp\htdocs\mitra-nutrilo\app\Views\User\Header_view.php(33): filemtime('user-assets/js/...')
+#2 C:\xampp\htdocs\mitra-nutrilo\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mitra-nutrilo\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('User/Header_vie...', Array, true)
+#4 C:\xampp\htdocs\mitra-nutrilo\app\Controllers\User\Home_user.php(58): view('User/Header_vie...', Array)
+#5 C:\xampp\htdocs\mitra-nutrilo\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\User\Home_user->index()
+#6 C:\xampp\htdocs\mitra-nutrilo\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Home_user))
+#7 C:\xampp\htdocs\mitra-nutrilo\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\mitra-nutrilo\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\mitra-nutrilo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#10 {main}
